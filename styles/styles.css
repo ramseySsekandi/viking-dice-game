@@ -19,7 +19,7 @@ main {
   display: flex;
   width: 70vw;
   background: rgba(224, 231, 255, 0.5215686275);
-  min-height: 80vh;
+  min-height: 80dvh;
   border-radius: 12px;
   position: relative;
 }
