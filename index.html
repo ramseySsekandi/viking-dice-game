@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main>
+        <section class="play-area active" id="playerOne">
+            <h1 class="player-name">PLAYER ONE</h1>
+            <p class="cummulative-score-one">0</p>
+            <div class="current-score">
+                <p>CURRENT</p>
+                <p id="scoreDigit" class="score-digit-one">0</p>
+            </div>
+        </section>
+        <section class="play-area" id="playerTwo">
+            <h1 class="player-name">PLAYER TWO</h1>
+            <p class="cummulative-score-two">0</p>
+            <div class="current-score">
+                <p>CURRENT</p>
+                <p class="score-digit-two">0</p>
+            </div>
+        </section>
+
+        <section class="play-controls">
+            <button class="new-game" id="newGame">New Game</button>
+            <div>
+            <button class="roll-dice" id="rollDice">Roll Dice</button>
+            <button class="hold">Hold</button>
+            </div>
+        </section>
+    </main>
+    <footer class="rules">
+        <h1>Game Developed by Viking Inc.</h1>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

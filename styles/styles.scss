@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nerko One", cursive;
+}
+
+body {
+    background: #2563eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+main {
+    display: flex;
+    width: 70vw;
+    background: #e0e7ff85;
+    min-height: 80vh;
+    border-radius: 12px;
+    position: relative;
+   
+}
+
+.play-area{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    .player-name{
+        font-size: 3rem;
+    }
+    .cummulative-score{
+        font-size: 5rem;
+    }
+    .current-score{
+        font-size: 1.5rem;
+        background: #2563eb;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 12px;
+    }
+}
+
+.active {
+    background: #e0e7ff85;
+}
+
+.play-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+    
+    div {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+   
+    
+}
+button {
+    width: 100%;
+    cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    border-radius: 24px;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1040px) {
+    main {
+        width: 100vw;
+        padding: 5px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .rules {
+        // color: white;
+        text-align: center;
+        padding: 5px;
+    }
+    .play-area {
+        .current-score{
+            background: #2564eb00;
+        }
+    }
+    .play-controls {
+        justify-content: space-between;
+        // background-color: rebeccapurple;
+        margin-top: 1rem;
+        align-items: center;
+        // width: 100%;
+        div {
+            gap: 1rem;
+            flex-direction: row;
+            // justify-content: center;
+            align-items: center;
+            width: 300px;
+        }
+        img {
+            max-width: 50px;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    #newGame{
+        
+    }
+}
